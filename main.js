@@ -43,12 +43,12 @@ var materials = items.filter(function(item){
 });
 
 materials.forEach(function(material){
-  console.log(material);
+  console.log(material.title + (material.materials));
 });
 
 //quesion6
 var madeby = items.filter(function(made){
   return made.who_made === "i_did";
-})
+});
 
 console.log(madeby.length + " were made by their sellers")
